@@ -34,7 +34,7 @@ public class indexController {
 
     @PostMapping("/test01")
     @ResponseBody
-    public Map postMethodId(@RequestBody Map<String, Object> request) {
+    public Map<?, ?> postMethodId(@RequestBody Map<String, Object> request) {
         String userId = (String) request.get("id");
         boolean notFound = tService.userGetId(userId);
         Map<String, Object> checkMap = new HashMap<>();
@@ -46,7 +46,7 @@ public class indexController {
 
     @PostMapping("/test02")
     @ResponseBody
-    public Map postMethodEmail(@RequestBody Map<String, Object> request) {
+    public Map<?, ?> postMethodEmail(@RequestBody Map<String, Object> request) {
         String email = (String) request.get("email");
         String checkNum = tService.emailCheck(email);
         System.out.println(email);

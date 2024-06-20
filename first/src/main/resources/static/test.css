@@ -63,9 +63,15 @@ input::placeholder{
     }
 
 }
+@media(max-width:1200px){
+    #countdownTimer {
+        margin-right: 35px; /* 버튼과의 간격을 줍니다 */
+    }
+}
 .relative{
     position: relative;
     display: flex;
+    flex-direction: row;
 }
 #countdownTimer{
     color:red;

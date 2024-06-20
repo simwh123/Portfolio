@@ -10,6 +10,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 body>div{
     margin-top: 10%;
 }
@@ -21,33 +22,96 @@ body>div>div:nth-child(1){
     
     text-align: center;
 }
-#inputText{
-    
+.idInputText{
+    border: 1px solid black;
     width: 100%;
     text-align: center;
+    border-radius: 10px;
+   
+    display: flex;
+}
+.pwInputText{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+   
+    display: flex;
 }
 input{
-    width: 50vh;
+    width: 100%;
     height: 60px;
     border-radius: 15px;
 }
 #id{
+    border: none;
     font-size: 20px;
+    outline: none;
 }
 #pw{
     font-size: 20px;
+    border: none;
+    outline: none;
 }
 #loginBtn{
     height: 70px;
     margin-top: 6vh;
+    margin-bottom: 15px;
     color:white;
     background-color: rgba(55, 151, 60, 0.637);
     font-size: 48px;
     font-family:'MoiraiOne-Regular';
 }
 #fistBox{
-    margin-top: 5vh;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 3vh;
 }
 h1{
     font-family: 'SokchoBadaBatang';
 }
+
+
+.idImg{
+    filter:blur(1px)
+}
+.pwImg{
+    filter:blur(1px)
+}
+span{
+    line-height: 60px;
+}
+.no-blur{
+    filter: none;
+}
+.idBorder{
+    border: 2px solid green;
+}
+.pwBorder{
+    border: 2px solid green;
+    
+}
+#wordSpacing{
+    
+    white-space: nowrap;
+    word-spacing: 15px;
+}
+span > a{
+    text-decoration: none;
+    color:inherit;
+}
+#boxSize{
+    width: 50%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:1000px) {
+    #boxSize{
+        width: auto;
+    }
+}
+

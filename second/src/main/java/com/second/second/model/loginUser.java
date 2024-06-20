@@ -1,4 +1,4 @@
-package com.demo03.demo03.model;
+package com.second.second.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -11,7 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(name = "USERTEST")
-public class testModel {
+public class loginUser {
     @Id
     @Column(name = "USER_ID")
     private String id;

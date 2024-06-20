@@ -9,6 +9,16 @@
             "projectName": "demo03",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SecondApplication<second>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.second.second.SecondApplication",
+            "projectName": "second",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

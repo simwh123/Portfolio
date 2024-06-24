@@ -8,6 +8,7 @@
 - CSS를 활용하여 View부분 개선
 - JS에서 비동기적 작업 (AJAX, Fetch API)
 - email api 활용해서 사용자인증
+- ![test](https://github.com/simwh123/Portfolio/blob/master/gif/test.gif)
 
 ### 두번째
 - 로그인 기능을 통하여 DB에 저장된 데이터 비교

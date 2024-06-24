@@ -16,15 +16,17 @@ public class testService {
 
     public String userInfo(testModel tModel) {
         boolean checkId = tRepository.findById(tModel.getId()).isEmpty();
+        String ck = "test";
         try {
             if (checkId == true) {
                 tRepository.save(tModel);
+                ck = "testOk";
             }
         } catch (Exception e) {
 
             System.out.println("에러");
         }
-        return "test";
+        return ck;
     }
 
     public boolean userGetId(String userIdCheck) {
@@ -46,5 +48,10 @@ public class testService {
         message.setFrom("tlatlek@naver.com");
         mailSender.send(message);
         return numOk;
+    }
+
+    public boolean userEamil(String useremail) {
+        boolean checkEmail = tRepository.findByEmail(useremail).isEmpty();
+        return checkEmail;
     }
 }

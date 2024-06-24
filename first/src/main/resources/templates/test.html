@@ -25,9 +25,10 @@
                         <input type="password" id="pw" name="pw" required placeholder="비밀번호" autocomplete="off">
                     </div>
                     <div class="relative">
-                        <input type="email" id="email" name="email" required placeholder="이메일" autocomplete="off" >
+                        <input type="email" id="email" name="email" required placeholder="이메일" autocomplete="off" oninput="sendId()">
                         <button type="button" class="btnCheck" onclick="btnClick()" >인증번호 발급</button>
                     </div>
+                    <span id="emailCk"></span>
                     <div class="relative" id="successOk">
                         <input type="text" id="check" name="check" placeholder="인증번호" autocomplete="off" disabled>
                         <span id="countdownTimer"></span>
@@ -110,6 +111,7 @@
         }
         function sendId(){
             const id = document.getElementById("id").value
+            const email = document.getElementById("email").value
             $.ajax({
                 type:'post',
                 url : '/test01',
@@ -119,16 +121,25 @@
                 },
                 dataType:'json',
                 data : JSON.stringify({
-                    "id" : id
+                    "id" : id,
+                    "email" :email
                 }),
                 success: function(result){
                     
                     if(result.key == true){
                         document.getElementById("idCheck").innerText ="";
                     }else if(result.key==false){
-                        const idCheck = document.getElementById("idCheck")
+                        const idCheck = document.getElementById("idCheck");
                         idCheck.innerText ="아이디 중복을 확인하세요.";
                         idCheck.style.color="red";
+                    }
+                    if(result.emailKey == true){
+                        document.getElementById("emailCk").innerText ="";
+                    }
+                    else if(result.emailKey == false){
+                        const emailCehck = document.getElementById("emailCk");
+                        emailCehck.innerText ="이메일 중복을 확인하세요."
+                        emailCehck.style.color="red";
                     }
                 },
                 error :function(request, status, error){

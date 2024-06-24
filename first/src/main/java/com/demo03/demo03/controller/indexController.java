@@ -27,19 +27,23 @@ public class indexController {
 
     @PostMapping("/testForm")
     public String User(@ModelAttribute testModel user, Model model) {
+        String ck = tService.userInfo(user);
         model.addAttribute("userData", user);
-        tService.userInfo(user);
-        return "test";
+        return ck;
     }
 
     @PostMapping("/test01")
     @ResponseBody
     public Map<?, ?> postMethodId(@RequestBody Map<String, Object> request) {
         String userId = (String) request.get("id");
+        String email = (String) request.get("email");
         boolean notFound = tService.userGetId(userId);
+        boolean checkEmail = tService.userEamil(email);
         Map<String, Object> checkMap = new HashMap<>();
         checkMap.put("key", notFound);
+        checkMap.put("emailKey", checkEmail);
         System.out.println(userId);
+        System.out.println(email);
 
         return checkMap;
     }

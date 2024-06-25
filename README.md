@@ -7,8 +7,8 @@
 - 회원가입 기능으로 JPA로 Oracle을 이용하여 서버와 클라이언트 정보교환 단순구현
 - CSS를 활용하여 View부분 개선
 - JS에서 비동기적 작업 (AJAX, Fetch API)
-- email api 활용해서 사용자인증
 ![test](https://github.com/simwh123/Portfolio/blob/master/gif/test.gif)
+- email api 활용해서 사용자인증
 ![success](https://github.com/simwh123/Portfolio/blob/master/gif/%EC%9D%B8%EC%A6%9D%EB%B2%88%ED%98%B8-%ED%85%8C%EC%8A%A4%ED%8A%B8.gif)
 
 

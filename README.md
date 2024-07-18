@@ -17,3 +17,8 @@
   - 첫번째가 DB에 값을 저장한다면 두번째는 값을 가져와서 활용하고싶어서 구현해봄
 - 보안적 부분으로 클라이언트에서 지역변수를 활용하지않고 서버측에서 데이터 처리에 신경씀 
 ![Login](https://github.com/simwh123/Portfolio/blob/master/gif/Login.gif)
+
+### [세번째]()
+- NEXON Open API를 활용한 메이플스토리 캐릭터 검색
+- Selenium을 활용한 웹 크롤링
+- 웹 크롤링 시간이 오래걸려 Bootstrap과 Jqurey를 활용한 로딩 처리

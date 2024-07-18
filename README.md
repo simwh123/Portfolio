@@ -22,3 +22,4 @@
 - NEXON Open API를 활용한 메이플스토리 캐릭터 검색
 - Selenium을 활용한 웹 크롤링
 - 웹 크롤링 시간이 오래걸려 Bootstrap과 Jqurey를 활용한 로딩 처리
+- ![maple](https://github.com/simwh123/Portfolio/blob/master/gif/%EC%BA%90%EB%A6%AD%ED%84%B0%EC%A1%B0%ED%9A%8C-Chrome-2024-07-18-21-13-17.gif)

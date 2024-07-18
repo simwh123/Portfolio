@@ -1,0 +1,10 @@
+body>div:nth-child(1){
+    height: 60px;
+}
+
+p{
+    text-align: center;
+}
+th{
+    white-space: nowrap;
+}
